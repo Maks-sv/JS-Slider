@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .slides {
   position: relative;
   height: 150px;
@@ -14,7 +21,7 @@
   height: 100%;
   opacity: 0;
   z-index: -999;
-  transition: opacity 0.25s;
+  transition: opacity 0.5s;
 }
 
 .active {
@@ -48,4 +55,32 @@
 
 .slide:nth-of-type(5) {
   background: purple;
+}
+.carousel {
+  margin: 0.5em;
+}
+.indicators,
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+.indicator {
+  padding: 0.3em 1.5em;
+}
+.control {
+  padding: 0.75em 1em;
+}
+.indicator,
+.control {
+  display: block;
+  background-color: #c9c7c757;
+  border: 1px solid #a09e9e4f;
+  cursor: pointer;
+  user-select: none;
+}
+.indicator.active {
+  background-color: #24232357;
+  border: 1px solid #0202024f;
 }
