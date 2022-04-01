@@ -1,4 +1,4 @@
-class Carousel {
+ class Carousel {
   constructor(p) {
     const settings = {...{containerID: '#carousel', slideID: '.slide', interval: 5000, isPlaying: true, direction: 'forward'}, ...p};
 
@@ -144,3 +144,4 @@ class Carousel {
     this._tick(this.isPlaying);
    } 
 }
+export default Carousel;

@@ -1,3 +1,4 @@
+import Carousel from './carousel.js';
 class SwipeCarousel extends Carousel{
   _initListeners() {
   super._initListeners();
@@ -13,3 +14,4 @@ _swipeEnd (e) {
    if (this.swipeStartX - this.swipeEndX > 100)this.next();
     }
 }
+export default SwipeCarousel;
